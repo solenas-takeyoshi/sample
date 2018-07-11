@@ -1,0 +1,20 @@
+{{set . "title" "省エネ提案見積もり・代理店管理システム"}}
+{{append . "moreStyles" "css/login.css"}}
+{{template "header.html" .}}
+
+<form class="form-signin center" role="form" action="/authenticate" method="post">
+  <h2 class="form-signin-heading">
+    <i class="fa fa-comments-o">
+      省エネ提案見積もり・代理店管理システム
+    </i>
+  </h2>
+  ログインID：
+  <input type="text" name="userID" class="form-control" placeholder="ログインID" required autofocus>
+  パスワード：
+  <input type="password" name="password" class="form-control" placeholder="パスワード" required>
+  <br/>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">ログイン</button>
+  <br/>
+</form>
+
+{{template "footer.html" .}}

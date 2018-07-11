@@ -1,0 +1,15 @@
+{{set . "title" "省エネ提案見積もり・代理店管理システム"}}
+{{template "header.html" .}}
+
+<form class="form-signin center" role="form" action="/authenticate" method="post">
+  <button class="btn btn-lg btn-primary btn-block" type="submit" name="agencylist">代理店一覧</button>
+  <br/>
+  <button class="btn btn-lg btn-primary btn-block" type="submit" name="productsearch">商品検索</button>
+  <br/>
+  <button class="btn btn-lg btn-primary btn-block" type="submit" name="estimatelist">お見積り一覧</button>
+  <br/>
+  <button class="btn btn-lg btn-primary btn-block" type="submit" name="clientlist">顧客一覧</button>
+  <br/>
+</form>
+
+{{template "footer.html" .}}

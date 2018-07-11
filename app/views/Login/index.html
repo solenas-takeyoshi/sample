@@ -1,0 +1,22 @@
+{{set . "title" "省エネ提案見積もり・代理店管理システム"}}
+{{append . "moreStyles" "css/login.css"}}
+{{template "header.html" .}}
+
+<form class="form-signin center" role="form" action="/authenticate" method="post">
+  <img class="mb-4" src="./img/asm_logo.png" alt="" width="116" height="85">
+  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="user_id" id="inputUserID" class="form-control" placeholder="ユーザーID" required="true" autofocus >
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" class="form-control form-control-lg" placeholder="パスワード" required="">
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block form-control-lg" type="submit" id="button_submit">Sign in</button>
+  <p class="mt-5 mb-3 text-muted">powered by ASM © 2017-2018</p>
+
+</form>
+
+{{template "footer.html" .}}
