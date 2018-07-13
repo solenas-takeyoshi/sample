@@ -6,16 +6,72 @@
   <img class="mb-4" src="/public/img/asm_logo.png" alt="" width="116" height="85">
   <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
   <label for="inputEmail" class="sr-only">Email address</label>
-  <input type="user_id" id="inputUserID" class="form-control" placeholder="ユーザーID" required="true" autofocus >
+  <input type="user_id" id="inputUserID" name="inputUserID" class="form-control" placeholder="ユーザーID" required="true" autofocus >
   <label for="inputPassword" class="sr-only">Password</label>
-  <input type="password" id="inputPassword" class="form-control form-control-lg" placeholder="パスワード" required="">
+  <input type="password" id="inputPassword" name="inputPassword" class="form-control form-control-lg" placeholder="パスワード" required="">
   <div class="checkbox mb-3">
     <label>
-      <input type="checkbox" value="remember-me"> Remember me
+      <input type="checkbox" value="remember-me" name="rememberme"> Remember me
     </label>
   </div>
-  <button class="btn btn-lg btn-primary btn-block form-control-lg" type="submit" id="button_submit">Sign in</button>
+  <button class="btn btn-lg btn-primary btn-block form-control-lg" type="submit" id="button_submit" name="button_submit">Sign in</button>
   <p class="mt-5 mb-3 text-muted">powered by ASM © 2017-2018</p>
+
+  <!-- 以下コントロールの検証 -->
+  <!-- hidden -->
+  <input type="hidden" id="testHiddenId" name="testHiddenName"  value="hiddenテキスト" >
+  <!-- テキストボックス -->
+  <input type="text" id="testTextId" name="testTextName" class="form-control" value="テストテキストボックス" pattern="^[0-9A-Za-z_]+$">
+  <!-- チェックボックス -->
+  <input type="checkbox" id="testCheckboxId" name="testCheckboxName" class="form-control" value="testCheckbox">
+  <!-- チェックボックス(複数) -->
+  <input type="checkbox" id="testCheckboxId2" name="testCheckboxName2" class="form-control" value="testCheckbox1">
+  <input type="checkbox" id="testCheckboxId2" name="testCheckboxName2" class="form-control" value="testCheckbox2">
+  <input type="checkbox" id="testCheckboxId2" name="testCheckboxName2" class="form-control" value="testCheckbox3">
+  <!-- ラジオボタン -->
+  <input type="radio" id="testRadioId" name="testRadioName" class="form-control" value="testRadio">
+  <!-- ラジオボタン(複数) -->
+  <input type="radio" id="testRadioId2" name="testRadioName2" class="form-control" value="testRadio1">
+  <input type="radio" id="testRadioId2" name="testRadioName2" class="form-control" value="testRadio2">
+  <input type="radio" id="testRadioId2" name="testRadioName2" class="form-control" value="testRadio3">
+  <!-- ファイル -->
+  <input type="file" id="testFileId" name="testFileName" >
+  <!-- 数値(HTML5から追加) -->
+  <input type="number" id="testNumberId" name="testNumberName" class="form-control" >
+  <!-- サブミット -->
+  <input type="submit" id="testSubmitId" name="testSubmitName" value="testSubmit" >
+  <!-- 画像ファイル -->
+  <input type="image" id="testImageId" name="testImageName" value="testImage" >
+  <!-- 電話番号(HTML5から追加) -->
+  <input type="tel" id="testTelId" name="testTelName" class="form-control" placeholder="電話番号" value="0120-123-456" >
+  <!-- email(HTML5から追加) -->
+  <input type="email" id="testEmailId" name="testEmailName" class="form-control" placeholder="E-Mail" value="test@solenas.co.jp" >
+  <!-- レンジ(HTML5から追加) -->
+  <input type="range" id="testRrangeId" name="testRrangeName" class="form-control" min="0" max="10" >
+  <!-- 検索テキスト(HTML5から追加) -->
+  <input type="search" id="testSearchId" name="testSearchName" class="form-control" placeholder="検索テキスト" value="test" >
+  <!-- url(HTML5から追加) -->
+  <input type="url" id="testUrlId" name="testUrlName" class="form-control" placeholder="url" >
+  <!-- UTC（協定世界時）(HTML5から追加) -->
+  <input type="datetime" id="testDatetimeId" name="testDatetimeName" class="form-control" >
+  <!-- 日付(HTML5から追加) -->
+  <input type="date" id="testDateId" name="testDateName" class="form-control" >
+  <!-- 月(HTML5から追加) -->
+  <input type="month" id="testMonthId" name="testMonthName" class="form-control" >
+  <!-- 週(HTML5から追加) -->
+  <input type="week" id="testWeekId" name="testWeekName" class="form-control" >
+  <!-- 時間(HTML5から追加) -->
+  <input type="time" id="testTimeId" name="testTimeName" class="form-control" >
+  <!-- ローカル日時(HTML5から追加) -->
+  <input type="datetime-local" id="testDatetimelocalId" name="testDatetimelocalName" class="form-control" >
+  <!-- 色(HTML5から追加) -->
+  <input type="color" id="testColorId" name="testColorName" class="form-control" >
+  <!-- リセット -->
+  <input type="reset" id="testResetId" name="testResetName" value="testReset" >
+  <!-- 汎用ボタン -->
+  <input type="button" id="testButtonId" name="testButtonName" value="testButton" >
+
+
 
 </form>
 
